@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.locosp.drawel.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/imgTxtSalon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgSalon"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/picture_of_living_room"
+                    android:cropToPadding="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hmc" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/Salon"
+                    android:textColor="#ffffff"
+                    android:textSize="60sp"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutCornerLights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgTxtSalon"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lampki_boczne"/>
+
+                <Button
+                    android:id="@+id/cornerOnBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/cornerOffBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCornerLights"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/galeria"/>
+
+
+                <Button
+                    android:id="@+id/galleryOnBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/galleryOffBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLivingArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutGallery"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maly_stol"
+                    />
+
+
+                <Button
+                    android:id="@+id/livingAreaOnBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/livingAreaOffBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDiningArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutLivingArea"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duzy_stol"
+                    />
+
+
+                <Button
+                    android:id="@+id/diningAreaOnBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/diningAreaOffBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHueComputer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutDiningArea"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hue_computer" />
+
+
+                <Button
+                    android:id="@+id/hueComputerOnBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/hueComputerOffBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSpeakersLights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutHueComputer"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/swiatla_glosnikow"
+                    android:onClick="showMoreHue"/>
+
+
+                <Button
+                    android:id="@+id/speakersLightsOnBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/speakersLightsOffBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+            </LinearLayout>
+
+            <!-- to znika i się pojawia !-->
+
+            <LinearLayout
+                android:id="@+id/hueBulbsNoVisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutSpeakersLights"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="#efeded"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/layoutHueSpkrLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hue_spkr_left" />
+
+
+                    <Button
+                        android:id="@+id/hueSpkrLeftOnBtn"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/on" />
+
+                    <Button
+                        android:id="@+id/hueSpkrLeftOffBtn"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/off" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutHueSpkrRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hue_spkr_right" />
+
+
+                    <Button
+                        android:id="@+id/hueSpkrRightOnBtn"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/on" />
+
+                    <Button
+                        android:id="@+id/hueSpkrRightOffBtn"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/off" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSonyPs4On"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/hueBulbsNoVisible"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sony_ps4" />
+
+
+                <Button
+                    android:id="@+id/sonyPs4On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/on"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+                <Button
+                    android:id="@+id/sonyPs4Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/off"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

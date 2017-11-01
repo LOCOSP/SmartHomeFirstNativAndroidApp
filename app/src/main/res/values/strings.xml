@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SmartHomeMenu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="lampki_boczne">Lampki boczne</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+    <string name="galeria">Galeria</string>
+    <string name="maly_stol">Mały stół</string>
+    <string name="duzy_stol">Duży stół</string>
+    <string name="swiatla_glosnikow">HUE głośniki</string>
+    <string name="Salon">salon</string>
+    <string name="picture_of_living_room">picture of living room</string>
+    <string name="zarowki_hue">Żarówki HUE</string>
+    <string name="komputer">Komputer</string>
+    <string name="hue_computer">HUE Komputer</string>
+    <string name="hue_spkr_left">HUE Głośnik lewy</string>
+    <string name="hue_spkr_right">HUE Głośnik prawy</string>
+    <string name="sony_ps4">Playstation 4</string>
+</resources>
