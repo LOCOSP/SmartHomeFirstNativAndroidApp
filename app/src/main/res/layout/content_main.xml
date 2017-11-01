@@ -265,7 +265,6 @@
                 android:background="#efeded"
                 >
 
-
                 <LinearLayout
                     android:id="@+id/layoutHueSpkrLeft"
                     android:layout_width="match_parent"
